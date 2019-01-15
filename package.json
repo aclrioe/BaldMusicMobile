@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.1.6",
     "@svgr/webpack": "2.4.1",
+    "antd-mobile": "^2.2.8",
     "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -118,5 +119,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "bundle-loader": "^0.5.6",
+    "react-loadable": "^5.5.0"
   }
 }

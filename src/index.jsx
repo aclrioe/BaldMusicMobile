@@ -5,7 +5,7 @@ import './index.css';
 import Home from './pages/Home/Home';
 import * as serviceWorker from './serviceWorker';
 import store from './redux/store';
-import Router from './router';
+import Router from './router/router';
 
 ReactDOM.render(
     <Provider store={store} >

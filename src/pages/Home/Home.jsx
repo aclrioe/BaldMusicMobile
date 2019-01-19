@@ -4,7 +4,7 @@ import {increment, decrement, reset} from 'actions/counter';
 import http from '@/api/http';
 import Api from '@/api/api';
 import { connect } from 'react-redux';
-import './Home.css';
+import './Home.scss';
 
 class Home extends Component {
     constructor () {

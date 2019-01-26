@@ -12,6 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/*
+  使用Viewport Units Buggyfill会有一定副作用。比如img和伪元素::before(:before)或::after（:after）。在img中content会引起部分浏览器下，图片不会显示
+*/
 img { 
   content: normal !important; 
 }

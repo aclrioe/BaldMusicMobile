@@ -1,10 +1,16 @@
-import React, { Component } from 'react';
-
+import React, {Component} from 'react';
+import { Icon, InputItem } from 'antd-mobile';
 
 class Searchbox extends Component {
-  
-  render () {
-
-  }
+    constructor() {
+      super()
+    }
+    render() {
+      return (
+        <div>
+          
+        </div>
+      )
+    }
 }
 export default Searchbox

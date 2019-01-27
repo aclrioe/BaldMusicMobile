@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch, Link } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Loadable from './loadable';
 
 const Home= Loadable( () => import('../pages/Home/Home'));

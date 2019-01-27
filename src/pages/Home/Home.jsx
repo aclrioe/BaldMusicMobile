@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { increment, decrement, reset } from 'actions/counter';
 import http from '@/api/http';
 import Api from '@/api/api';
 import { connect } from 'react-redux';
 import './Home.scss';
+import SearchBox from './Search/SearchBox';
 
 class Home extends Component {
 	constructor() {
@@ -24,6 +24,7 @@ class Home extends Component {
 		console.log(this.props);
 		return (
 			<div className="wrap" >
+				<SearchBox></SearchBox>
 				this is home <br />
 				当前计数： {counter.count}
 				<button onClick={() => increment()} >自增</button>

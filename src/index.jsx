@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import './index.css';
-import Home from './pages/Home/Home';
 import * as serviceWorker from './serviceWorker';
 import store from './redux/store';
 import Router from './router/router';

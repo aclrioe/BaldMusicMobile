@@ -5,6 +5,7 @@ import Api from '@/api/api';
 import { connect } from 'react-redux';
 import './Home.scss';
 import SearchBox from './Search/SearchBox';
+import TabBar from './TabBar/TabBar';
 
 class Home extends Component {
 	constructor() {
@@ -25,8 +26,7 @@ class Home extends Component {
 		return (
 			<div className="wrap" >
 				<SearchBox></SearchBox>
-				this is home <br />
-				当前计数： {counter.count}
+
 				<button onClick={() => increment()} >自增</button>
 				<button onClick={() => decrement()} >自减</button>
 				<button onClick={() => reset()} >重置</button>
@@ -36,6 +36,7 @@ class Home extends Component {
 
 				<button onClick={() => this._getUser()} >获取个人信息</button>
 				<div>{this.state.userinfo.name}</div>
+				<TabBar index={0} ></TabBar>
 			</div>
 		)
 	}

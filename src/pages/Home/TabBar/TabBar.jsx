@@ -9,8 +9,16 @@ class TabBar extends Component {
       <div className="tab-bar" >
         {tabBarData.map((tabItem,i) => {
           return (
-            <a href={ tabItem.pageUrl } key={tabItem.title} className="tab-item" >
-              <img className={ i === 2 ? 'login' : '' } src={ index === i ? tabItem.imgSelectPath : tabItem.imgPath } />
+            <a 
+              href={ tabItem.pageUrl } 
+              key={tabItem.title} 
+              className="tab-item" 
+            >
+              <img 
+                className={ i === 2 ? 'login' : '' } 
+                src={ index === i ? tabItem.imgSelectPath : tabItem.imgPath }
+                alt="" 
+              />
               { tabItem.title 
                   ? (<span className={`title ${ index === i ? 'active' : ''}`} >{tabItem.title}</span>) 
                   : null 

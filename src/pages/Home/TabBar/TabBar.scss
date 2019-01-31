@@ -1,3 +1,4 @@
+@import '@/assets/styles/variables.scss';
 .tab-bar{
   width: 100%;
   height: 100px;
@@ -5,27 +6,27 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  background-color: #1f1e53;
+  background-color: $body-background;
+  .tab-item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .login{
+      width: 70px;
+      height: 70px;
+    }
+    img{
+      width: 50px;
+      height: 50px;
+    }
+    .title{
+      color: $text-color;
+      &.active{
+        color: $text-color-select;
+      }
+    }
+  }
+}
 
-}
-.tab-item{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.tab-item .login{
-  width: 70px;
-  height: 70px;
-}
-.tab-item>img{
-  width: 50px;
-  height: 50px;
-}
-.title{
-  color: #fff;
-}
-.title.active{
-  color: #53d6e2;
-}

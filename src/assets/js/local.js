@@ -8,7 +8,18 @@ import dynamicAC from '@/assets/imgs/icon_dynamic_AC.png';
 import personal from '@/assets/imgs/icon_personal.png';
 import personalAC from '@/assets/imgs/icon_personal_AC.png';
 
+const indexTabs = [
+  {
+    title: "Music Hall"
+  },
+  {
+    title: "Recommend"
+  },
+  {
+    title: "Circle"
+  },
 
+]
 
 const tabBarData = [
   {
@@ -41,8 +52,24 @@ const tabBarData = [
     imgSelectPath: personalAC,
     title: 'Personal',
   },
-  
-
 ];
+const quickEntryData = [
+  {
+    title: "Music Hall",
+    path: ""
+  },
+  {
+    title: "Recommend",
+    path: ""
+  },
+  {
+    title: "Circle",
+    path: ""
+  },
+]
 
-export { tabBarData }
+export { 
+  indexTabs,
+  tabBarData,
+  quickEntryData
+}
